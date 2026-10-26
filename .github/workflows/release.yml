@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   release:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, x64]
     permissions:
       contents: write # GitHub Release + plugin asset upload
       id-token: write # OIDC: npm trusted publishing + provenance
